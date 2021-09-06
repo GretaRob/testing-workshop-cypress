@@ -12,6 +12,7 @@
 it('starts with zero items (waits)', () => {
   cy.visit('/')
   // wait 1 second
+  cy.wait(1000)
   // then check the number of items
   cy.get('li.todo').should('have.length', 0)
 })
@@ -22,6 +23,7 @@ it('starts with zero items', () => {
   //  with cy.intercept(...).as(<alias name>)
   // THEN visit the page
   cy.visit('/')
+  
   // wait for `GET /todos` route
   //  using "@<alias name>" string
   // then check the DOM

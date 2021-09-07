@@ -1,3 +1,5 @@
+/* eslint-disable prettier/prettier */
+// eslint-disable-next-line prettier/prettier
 /// <reference types="cypress" />
 // application should be running at port 3000
 // and the "localhost:3000" is set as "baseUrl" in "cypress.json"
@@ -23,6 +25,7 @@ it('adds items to store', () => {
   // get application's window
   // then get app, $store, state, todos
   // it should have 2 items
+  cy.window().its('app.$store.state.todos').should('have.length', 2)
 })
 
 it('creates an item with id 1', () => {

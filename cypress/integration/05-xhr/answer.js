@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 /// <reference types="cypress" />
 //
 // note, we are not resetting the server before each test

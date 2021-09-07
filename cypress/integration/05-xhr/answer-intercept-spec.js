@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 /// <reference types="cypress" />
 
 import { resetDatabase, resetDatabaseTo } from '../../support/utils'
